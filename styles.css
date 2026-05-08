@@ -117,45 +117,17 @@ a {
   margin-inline: auto;
 }
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
-}
-
 main,
 footer {
   position: relative;
   z-index: 2;
 }
 
-.nav-wrap {
-  min-height: 68px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 1rem;
-}
-
-.site-nav {
-  display: flex;
-  gap: 1rem;
-}
-
-.site-nav a {
-  color: var(--text-muted);
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.site-nav a:hover {
-  color: var(--text);
-}
-
 .theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 30;
   border: 1px solid var(--border);
   background: var(--surface);
   border-radius: 10px;
@@ -537,11 +509,5 @@ h2 {
 
   .cards {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 640px) {
-  .site-nav {
-    display: none;
   }
 }
