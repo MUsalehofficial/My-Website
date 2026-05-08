@@ -21,10 +21,33 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+    <header class="site-header" role="banner">
+      <div class="nav-dock">
+        <nav class="site-nav" aria-label="Page sections">
+          <ul class="nav-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications" title="Certifications">Certs</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          type="button"
+          aria-label="Toggle theme"
+        >
+          🌙
+        </button>
+      </div>
+    </header>
 
-    <main id="home">
-      <section class="hero section">
+    <main>
+      <section class="hero section" id="home">
         <div class="container hero-stack">
           <div class="profile-wrap">
             <span class="profile-frame">
@@ -38,7 +61,7 @@
           </div>
           <div class="hero-content">
             <p class="eyebrow">Senior Infrastructure Systems Engineer</p>
-            <h1>Building secure, resilient, and scalable IT infrastructure.</h1>
+            <h1>Reliable IT infrastructure for secure, scalable operations.</h1>
             <p class="lead">
               Infrastructure & Cloud Systems Engineer with expertise in designing,
               migrating, and optimizing enterprise environments across on-premises and
@@ -61,48 +84,18 @@
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contact">Get In Touch</a>
               <a class="btn btn-secondary" href="#experience">View Experience</a>
-              <a class="btn btn-secondary" href="#blog">Blog (Coming Soon)</a>
             </div>
           </div>
-          <aside class="hero-focus" aria-labelledby="core-focus-title">
-            <p class="focus-kicker">Primary domains</p>
-            <h2 id="core-focus-title" class="focus-title">Core Focus</h2>
-            <p class="focus-lead">
-              I align platform design, identity, and data protection so systems stay
-              available, observable, and safe to change.
+          <aside class="hero-focus" aria-label="Core technical focus">
+            <p class="focus-kicker">Core focus</p>
+            <p class="focus-lead focus-lead-tight">
+              Hybrid cloud, Microsoft &amp; Nutanix estates, backup/DR, and
+              security-minded operations.
             </p>
-            <div class="focus-grid">
-              <article class="focus-pillar">
-                <h3 class="focus-pillar-title">Hybrid cloud &amp; platforms</h3>
-                <p class="focus-pillar-text">
-                  Modernize and connect on-prem estates with Azure and AWS—migrations,
-                  Kubernetes-style services, and reliable integration patterns.
-                </p>
-                <div class="stack focus-stack">
-                  <span>Azure</span><span>AWS</span><span>EKS</span
-                  ><span>RDS/Aurora</span>
-                </div>
-              </article>
-              <article class="focus-pillar">
-                <h3 class="focus-pillar-title">Microsoft &amp; virtualization</h3>
-                <p class="focus-pillar-text">
-                  Active Directory, Office 365 hybrid, Nutanix AHV/clusters, and VMware
-                  operations at production scale with clear standards.
-                </p>
-                <div class="stack focus-stack">
-                  <span>AD</span><span>O365</span><span>Nutanix</span><span>vSphere</span>
-                </div>
-              </article>
-              <article class="focus-pillar">
-                <h3 class="focus-pillar-title">Resilience &amp; security</h3>
-                <p class="focus-pillar-text">
-                  Backup and DR with Commvault and Veeam, patching and vulnerability
-                  response, HA design, and hardening guided by Zero Trust habits.
-                </p>
-                <div class="stack focus-stack">
-                  <span>Commvault</span><span>Veeam</span><span>HA</span><span>DR</span>
-                </div>
-              </article>
+            <div class="stack focus-stack focus-inline">
+              <span>Azure</span><span>AWS</span><span>AD</span><span>O365</span
+              ><span>Nutanix</span><span>VMware</span><span>Commvault</span
+              ><span>Veeam</span><span>SCCM</span>
             </div>
           </aside>
         </div>
@@ -110,7 +103,7 @@
 
       <section id="about" class="section reveal">
         <div class="container">
-          <p class="section-kicker">Who I Am</p>
+          <p class="section-kicker">Profile</p>
           <h2>About Me</h2>
           <p>
             I lead infrastructure initiatives that improve business continuity, security,
@@ -122,84 +115,9 @@
         </div>
       </section>
 
-      <section id="services" class="section section-muted reveal">
-        <div class="container">
-          <p class="section-kicker">What I Build</p>
-          <h2>Services</h2>
-          <div class="service-grid">
-            <article class="service-card">
-              <h3>Infrastructure Architecture</h3>
-              <p>
-                Design and operation of enterprise infrastructure with focus on high
-                availability, security, and resilience.
-              </p>
-              <ul>
-                <li>Microsoft AD + Office 365 Hybrid</li>
-                <li>Nutanix and vCenter environments</li>
-                <li>Endpoint and patch compliance</li>
-              </ul>
-            </article>
-            <article class="service-card">
-              <h3>Backup & Disaster Recovery</h3>
-              <p>
-                Reliable data protection and recovery practices built for enterprise-grade
-                operational continuity.
-              </p>
-              <ul>
-                <li>Commvault and Veeam administration</li>
-                <li>Recovery validation and readiness</li>
-                <li>Backup integration with Nutanix</li>
-              </ul>
-            </article>
-            <article class="service-card">
-              <h3>Cloud & DevOps Enablement</h3>
-              <p>
-                Cloud-first modernization and operational automation aligned with security
-                and performance.
-              </p>
-              <ul>
-                <li>AWS migration and modernization</li>
-                <li>EKS, RDS, and Aurora adoption</li>
-                <li>Cross-team platform integration</li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="expertise" class="section section-muted reveal">
-        <div class="container">
-          <p class="section-kicker">What I Do</p>
-          <h2>Expertise</h2>
-          <div class="cards">
-            <article class="card">
-              <h3>Infrastructure & Operations Leadership</h3>
-              <p>
-                Lead infrastructure teams and operations across hardware, software,
-                endpoint compliance, and service continuity.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Hybrid Cloud & Platform Integration</h3>
-              <p>
-                Integrate enterprise on-prem systems with cloud platforms for scalability,
-                reliability, and modernization.
-              </p>
-            </article>
-            <article class="card">
-              <h3>Security, Backup & Resilience</h3>
-              <p>
-                Build and optimize recovery-first architecture using Commvault, Veeam, and
-                vulnerability-driven improvements.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section id="experience" class="section reveal">
         <div class="container">
-          <p class="section-kicker">Recent Impact</p>
+          <p class="section-kicker">Experience</p>
           <h2>Professional Experience</h2>
           <div class="timeline">
             <div class="timeline-item">
@@ -295,7 +213,7 @@
 
       <section id="projects" class="section reveal">
         <div class="container">
-          <p class="section-kicker">Featured Work</p>
+          <p class="section-kicker">Projects</p>
           <h2>Selected Projects</h2>
           <div class="project-grid">
             <article class="project-card">
@@ -364,37 +282,15 @@
                 <span>Hyper-V</span><span>Veeam</span><span>IIS</span>
               </div>
             </article>
-            <article class="project-card">
-              <p class="blog-tag">Game Backend</p>
-              <h3>Phoenix Online (MMORPG)</h3>
-              <p>
-                Developed and optimized backend/game logic in C# with MySQL integration
-                and performance-focused software improvements.
-              </p>
-              <div class="stack">
-                <span>C#</span><span>MySQL</span><span>Visual Studio</span>
-              </div>
-            </article>
-            <article class="project-card">
-              <p class="blog-tag">Technical Project</p>
-              <h3>Automated CV Analysis & Screening (ACVAS)</h3>
-              <p>
-                University graduation project focused on automated candidate CV parsing
-                and screening workflow.
-              </p>
-              <div class="stack">
-                <span>Automation</span><span>Screening</span><span>GitHub</span>
-              </div>
-            </article>
           </div>
         </div>
       </section>
 
-      <section id="certifications" class="section reveal">
+      <section id="certifications" class="section section-muted reveal">
         <div class="container">
-          <p class="section-kicker">Credentials</p>
+          <p class="section-kicker">Courses &amp; certificates</p>
           <h2>Certifications</h2>
-          <div class="cards">
+          <div class="cards cert-cards">
             <article class="card">
               <h3>AWS Cloud Practitioner Essentials</h3>
               <p>Coursera</p>
@@ -463,33 +359,105 @@
         </div>
       </section>
 
-      <section id="approach" class="section section-muted reveal">
+      <section id="skills" class="section reveal">
         <div class="container">
-          <p class="section-kicker">How I Work</p>
-          <h2>My Approach</h2>
-          <div class="phase-grid">
-            <article class="phase-card">
-              <p class="phase-label">Phase 1</p>
-              <h3>Assessment & Strategy</h3>
+          <p class="section-kicker">Skills</p>
+          <h2>Skills</h2>
+          <div class="cards cert-cards">
+            <article class="card">
+              <h3>Windows Server</h3>
               <p>
-                Gather requirements, audit current systems, and define realistic delivery
-                milestones.
+                Roles/features, troubleshooting, registry &amp; core tuning, lifecycle
+                admin.
               </p>
             </article>
-            <article class="phase-card">
-              <p class="phase-label">Phase 2</p>
-              <h3>Implementation & Validation</h3>
+            <article class="card">
+              <h3>PowerShell &amp; scripting</h3>
               <p>
-                Deploy improvements incrementally with testing, monitoring, and rollback
-                safety in mind.
+                Infrastructure automation with PowerShell—modules, runbooks, repeatable
+                provisioning, and integrations with AD, Microsoft 365, and monitoring
+                tooling.
               </p>
             </article>
-            <article class="phase-card">
-              <p class="phase-label">Phase 3</p>
-              <h3>Optimization & Handover</h3>
+            <article class="card">
+              <h3>Active Directory</h3>
               <p>
-                Fine-tune performance, document operations, and enable teams with clear
-                runbooks.
+                Replication, DC upgrades, LDAP integrations, OU/GPO design, hybrid
+                identity. Tools: ManageEngine ADManager, ADAudit, ADSelfService.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Patch &amp; endpoint management</h3>
+              <p>WSUS; SCCM; ManageEngine Endpoint Central (patch &amp; compliance).</p>
+            </article>
+            <article class="card">
+              <h3>ITSM</h3>
+              <p>ManageEngine ServiceDesk Plus for service workflows.</p>
+            </article>
+            <article class="card">
+              <h3>Cloud</h3>
+              <p>Azure · AWS · OCI · GCP — architecture, workloads, integrations.</p>
+            </article>
+            <article class="card">
+              <h3>Virtualization</h3>
+              <p>
+                Hyper-V · VMware vSphere/ESXi/vCenter · Nutanix AHV · Azure VMs ·
+                VirtualBox.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Linux &amp; UNIX</h3>
+              <p>Install/configure Linux distributions and vendor virtual appliances.</p>
+            </article>
+            <article class="card">
+              <h3>Web platforms</h3>
+              <p>cPanel · IIS · Apache administration.</p>
+            </article>
+            <article class="card">
+              <h3>Backup</h3>
+              <p>Veeam · Commvault · EMC NetWorker — monitoring, sizing, restores.</p>
+            </article>
+            <article class="card">
+              <h3>Storage</h3>
+              <p>SAN · NAS · NFS · SMB access patterns &amp; operations.</p>
+            </article>
+            <article class="card">
+              <h3>Endpoint security</h3>
+              <p>Symantec Endpoint Protection Server management.</p>
+            </article>
+            <article class="card">
+              <h3>Messaging</h3>
+              <p>Microsoft Exchange on-premises · cloud mail/messaging footprints.</p>
+            </article>
+            <article class="card">
+              <h3>Databases</h3>
+              <p>
+                Microsoft SQL Server · MySQL · PostgreSQL · MongoDB builds &amp; config.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Languages &amp; software engineering</h3>
+              <p>
+                Primarily scripting for infra; experienced with C#, C++, Python, PHP,
+                HTML, and Java when building tooling or integrations.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Networking</h3>
+              <p>Subnets · VLANs · firewalls · VPN fundamentals for enterprise infra.</p>
+            </article>
+            <article class="card">
+              <h3>Cybersecurity</h3>
+              <p>
+                ISO 27001 familiarity; penetration testing practice (Kali tooling, CTF
+                drills).
+              </p>
+            </article>
+            <article class="card">
+              <h3>DevOps &amp; automation (intro)</h3>
+              <p>
+                Terraform · Docker · Kubernetes · Ansible · Vagrant — operational exposure
+                (learning path).
               </p>
             </article>
           </div>
@@ -498,27 +466,57 @@
 
       <section id="blog" class="section section-muted reveal">
         <div class="container">
-          <p class="section-kicker">Insights & Notes</p>
-          <h2>Blog</h2>
-          <p>
-            Recent topics I share focus on identity, security architecture, cloud
-            operations, and practical AI automation use cases.
+          <p class="section-kicker">Blog</p>
+          <h2>Writing</h2>
+          <p class="blog-teaser">
+            Practical notes mirrored from LinkedIn—short reads on identity, resilience,
+            and cloud operations (full posts can link out later).
           </p>
-          <div class="blog-grid">
-            <article class="blog-card">
-              <p class="blog-tag">Shared</p>
-              <h3>OAuth vs SAML: Identity Flow Explained</h3>
-              <p>How token-based and assertion-based identity models differ.</p>
+          <div class="cards cert-cards">
+            <article class="card">
+              <p class="blog-tag">Identity</p>
+              <h3>OAuth vs SAML in plain terms</h3>
+              <p>
+                Where browser redirects, tokens, and enterprise SSO assertions each fit in
+                a modern stack.
+              </p>
             </article>
-            <article class="blog-card">
-              <p class="blog-tag">Shared</p>
-              <h3>RBAC vs ABAC in Access Control</h3>
-              <p>Choosing between role-based and attribute-based authorization.</p>
+            <article class="card">
+              <p class="blog-tag">Access control</p>
+              <h3>RBAC vs ABAC—and when hybrids win</h3>
+              <p>
+                Roles keep admin simple; attributes help when ownership and context drift
+                across teams.
+              </p>
             </article>
-            <article class="blog-card">
-              <p class="blog-tag">Shared</p>
-              <h3>WAF, Firewalls, Secrets, and Zero Trust Patterns</h3>
-              <p>Applied security concepts from real infrastructure operations.</p>
+            <article class="card">
+              <p class="blog-tag">Security ops</p>
+              <h3>WAF layers, secrets hygiene, Zero Trust habits</h3>
+              <p>Applying defense-in-depth lessons from regulated, always-on estates.</p>
+            </article>
+            <article class="card">
+              <p class="blog-tag">Hybrid cloud</p>
+              <h3>Lifting workloads without borrowing tomorrow’s outages</h3>
+              <p>
+                Dependencies, rollback paths, identity, and cutover pacing when bridging
+                on-prem estates and public clouds.
+              </p>
+            </article>
+            <article class="card">
+              <p class="blog-tag">Backup / DR</p>
+              <h3>RPO/RTO language that infra and business both understand</h3>
+              <p>
+                Mapping recovery objectives to tooling reality—jobs, catalogs, restores,
+                and tabletop discipline.
+              </p>
+            </article>
+            <article class="card">
+              <p class="blog-tag">Identity ops</p>
+              <h3>Hardening AD &amp; cloud identity at the seams</h3>
+              <p>
+                Replication health, Tiering habits, Conditional Access parallels, and
+                least-privilege service accounts under pressure.
+              </p>
             </article>
           </div>
         </div>
