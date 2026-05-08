@@ -1,0 +1,18 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "prettier --check \"**/*.{html,css,js,json,md,yml,yaml}\"",
+    "format": "prettier --write \"**/*.{html,css,js,json,md,yml,yaml}\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "prettier": "^3.8.3"
+  }
+}

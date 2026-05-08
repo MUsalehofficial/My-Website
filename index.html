@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Muhammad Saleh - Senior Infrastructure Systems Engineer portfolio."
+    />
+    <title>Muhammad Saleh | Senior Infrastructure Systems Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <nav class="site-nav">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#experience">Experience</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          🌙
+        </button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-stack">
+          <div class="profile-wrap">
+            <span class="profile-frame">
+              <img
+                class="profile-photo"
+                src="./assets/images/muhammad-saleh.png"
+                alt="Portrait of Muhammad Saleh"
+              />
+            </span>
+            <p class="profile-name">Muhammad Saleh</p>
+          </div>
+          <div class="hero-content">
+            <p class="eyebrow">Senior Infrastructure Systems Engineer</p>
+            <h1>Building secure, resilient, and scalable IT infrastructure.</h1>
+            <p class="lead">
+              I design and operate enterprise systems across virtualization, cloud,
+              backup, and high-availability environments.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">Get In Touch</a>
+              <a class="btn btn-secondary" href="#experience">View Experience</a>
+              <a class="btn btn-secondary" href="#blog">Blog (Coming Soon)</a>
+            </div>
+          </div>
+          <aside class="hero-card hero-focus">
+            <h2>Core Focus</h2>
+            <ul>
+              <li>Hybrid Cloud (Azure, AWS)</li>
+              <li>Microsoft Infrastructure</li>
+              <li>Nutanix & Virtualization</li>
+              <li>Commvault & Veeam Backup</li>
+              <li>High Availability & Security</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>
+            I’m an Infrastructure Systems Engineer with hands-on leadership experience in
+            system administration, virtualization, cloud integration, and enterprise
+            backup solutions. I enjoy solving complex reliability challenges and mentoring
+            teams that support critical business operations.
+          </p>
+        </div>
+      </section>
+
+      <section id="expertise" class="section section-muted reveal">
+        <div class="container">
+          <h2>Expertise</h2>
+          <div class="cards">
+            <article class="card">
+              <h3>Infrastructure & Operations</h3>
+              <p>
+                Designing stable environments across physical and virtual infrastructure
+                with strong governance and monitoring.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Cloud & Platform Integration</h3>
+              <p>
+                Integrating on-prem systems with Azure and AWS for scalability, disaster
+                recovery, and business continuity.
+              </p>
+            </article>
+            <article class="card">
+              <h3>Backup & Resilience</h3>
+              <p>
+                Implementing robust backup and recovery architecture using Commvault and
+                Veeam to protect critical data.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="container">
+          <h2>Highlights</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h3>Infrastructure Team Leadership</h3>
+              <p>
+                Led infrastructure teams to deliver highly available services, incident
+                response, and modernization initiatives.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Enterprise Environment Management</h3>
+              <p>
+                Managed Microsoft technology stacks and Nutanix clusters across
+                production-critical workloads.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <h3>Availability & Security Improvements</h3>
+              <p>
+                Improved uptime and recovery readiness through proactive design, backup
+                validation, and operational hardening.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="section section-muted reveal">
+        <div class="container">
+          <h2>Blog</h2>
+          <p>
+            This section is ready for upcoming posts. We can add categories, article
+            cards, and a full blog page in the next step.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-muted reveal">
+        <div class="container contact-wrap">
+          <div>
+            <h2>Let’s Connect</h2>
+            <p>
+              Open to opportunities, collaborations, and technical discussions around
+              enterprise infrastructure and cloud systems.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:hello@example.com">Email Me</a>
+            <a
+              class="btn btn-secondary"
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              class="btn btn-secondary"
+              href="https://github.com"
+              target="_blank"
+              rel="noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Muhammad Saleh. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
