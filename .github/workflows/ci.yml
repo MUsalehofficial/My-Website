@@ -1,11 +1,12 @@
+# Run manually from the Actions tab while GitHub runner git access is restricted.
+# Site deploy does not use this workflow — Pages publishes from the main branch.
 name: CI
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
 
 jobs:
   quality-checks:
