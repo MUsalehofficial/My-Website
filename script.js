@@ -299,15 +299,25 @@ const renderCredlyBadges = (data) => {
   );
 };
 
+const CREDLY_BADGES_URLS = [
+  "./assets/data/credly-badges.json",
+  "https://raw.githubusercontent.com/MUsalehofficial/My-Website/main/assets/data/credly-badges.json",
+];
+
 const loadCredlyBadges = async () => {
   if (!credlyContainer) return;
 
   try {
-    const res = await fetch("./assets/data/credly-badges.json", {
-      headers: { Accept: "application/json" },
-    });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    renderCredlyBadges(await res.json());
+    let data = null;
+    for (const url of CREDLY_BADGES_URLS) {
+      const res = await fetch(url, { headers: { Accept: "application/json" } });
+      if (res.ok) {
+        data = await res.json();
+        break;
+      }
+    }
+    if (!data) throw new Error("No badge data");
+    renderCredlyBadges(data);
   } catch {
     credlyContainer.innerHTML =
       '<p class="credly-status" role="status">Could not load badges. <a class="credly-profile-link" href="https://www.credly.com/users/musalehofficial" target="_blank" rel="noopener noreferrer">View on Credly</a></p>';
