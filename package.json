@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run lint",
     "lint": "prettier --check \"**/*.{html,css,js,json,md,yml,yaml}\"",
-    "format": "prettier --write \"**/*.{html,css,js,json,md,yml,yaml}\""
+    "format": "prettier --write \"**/*.{html,css,js,json,md,yml,yaml}\"",
+    "sync:credly": "node scripts/sync-credly-badges.mjs"
   },
   "keywords": [],
   "author": "",

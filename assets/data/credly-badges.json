@@ -1,0 +1,55 @@
+{
+  "username": "musalehofficial",
+  "profileUrl": "https://www.credly.com/users/musalehofficial",
+  "syncedAt": "2026-05-26T12:11:05.255Z",
+  "badges": [
+    {
+      "id": "0cef100d-d9ef-46f9-a4fb-3c050a13a890",
+      "name": "Commvault Cloud for VMware",
+      "issuer": "Commvault",
+      "issuedAt": "2026-05-26",
+      "imageUrl": "https://images.credly.com/images/c802c2ff-f7e1-417b-943d-6e729dbe32b9/blob",
+      "url": "https://www.credly.com/badges/0cef100d-d9ef-46f9-a4fb-3c050a13a890"
+    },
+    {
+      "id": "18a56b34-44b7-4b4d-ba2d-c20cb49b0dc4",
+      "name": "Commvault Cloud Practitioner Elective Course",
+      "issuer": "Commvault",
+      "issuedAt": "2026-05-26",
+      "imageUrl": "https://images.credly.com/images/d9f5ab02-94a0-409e-95ea-5ee14fb539c8/blob",
+      "url": "https://www.credly.com/badges/18a56b34-44b7-4b4d-ba2d-c20cb49b0dc4"
+    },
+    {
+      "id": "7fd5c103-acf7-4618-828e-7d8e2e296f90",
+      "name": "AWS Certified Solutions Architect – Associate",
+      "issuer": "Amazon Web Services Training and Certification",
+      "issuedAt": "2026-05-25",
+      "imageUrl": "https://images.credly.com/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+      "url": "https://www.credly.com/badges/7fd5c103-acf7-4618-828e-7d8e2e296f90"
+    },
+    {
+      "id": "30cbdfcc-af4a-4e43-900a-e4b6da00218e",
+      "name": "Google IT Support Certificate",
+      "issuer": "Coursera",
+      "issuedAt": "2022-10-15",
+      "imageUrl": "https://images.credly.com/images/ae2f5bae-b110-4ea1-8e26-77cf5f76c81e/GCC_badge_IT_Support_1000x1000.png",
+      "url": "https://www.credly.com/badges/30cbdfcc-af4a-4e43-900a-e4b6da00218e"
+    },
+    {
+      "id": "f36d1180-2aa6-4895-a759-b033c60e6af9",
+      "name": "Introduction to Cybersecurity",
+      "issuer": "Cisco",
+      "issuedAt": "2022-03-22",
+      "imageUrl": "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+      "url": "https://www.credly.com/badges/f36d1180-2aa6-4895-a759-b033c60e6af9"
+    },
+    {
+      "id": "0939a084-d444-46f3-844c-8a00dfcf227d",
+      "name": "Introduction to Cybersecurity Tools & Cyber Attacks",
+      "issuer": "Coursera and authorized by IBM",
+      "issuedAt": "2021-08-31",
+      "imageUrl": "https://images.credly.com/images/5ed0eac3-8986-4fab-a16b-cab70d4a920e/blob",
+      "url": "https://www.credly.com/badges/0939a084-d444-46f3-844c-8a00dfcf227d"
+    }
+  ]
+}
