@@ -548,7 +548,7 @@ h2 {
 }
 
 .card,
-.timeline-item {
+.timeline-company {
   border: 1px solid var(--border);
   background: var(--surface);
   border-radius: 12px;
@@ -557,7 +557,7 @@ h2 {
 }
 
 .card,
-.timeline-item,
+.timeline-company,
 .project-card {
   transition:
     transform 0.2s ease,
@@ -565,7 +565,7 @@ h2 {
 }
 
 .card:hover,
-.timeline-item:hover,
+.timeline-company:hover,
 .project-card:hover {
   transform: translateY(-3px);
   border-color: color-mix(in srgb, var(--accent) 42%, var(--border));
@@ -659,21 +659,56 @@ h2 {
   gap: 0.75rem;
 }
 
-.role-meta {
-  margin: -0.1rem 0 0.6rem;
+.timeline-company-header {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.timeline-company-header h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.company-meta {
+  margin: 0;
   color: var(--accent);
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
-.timeline-item ul {
+.timeline-roles {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.timeline-role + .timeline-role {
+  padding-top: 0.85rem;
+  border-top: 1px solid color-mix(in srgb, var(--border) 70%, transparent);
+}
+
+.timeline-role h4 {
+  margin: 0 0 0.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.role-meta {
+  margin: 0 0 0.55rem;
+  color: var(--text-muted);
+  font-size: 0.76rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.timeline-role ul {
   margin: 0;
   padding-left: 1rem;
   color: var(--text-muted);
 }
 
-.timeline-item li + li {
+.timeline-role li + li {
   margin-top: 0.35rem;
 }
 
@@ -825,13 +860,13 @@ h2 {
   }
 
   .card,
-  .timeline-item,
+  .timeline-company,
   .project-card {
     border-radius: 11px;
     padding: 0.8rem 0.85rem;
   }
 
-  .timeline-item ul {
+  .timeline-role ul {
     padding-left: 0.9rem;
   }
 
