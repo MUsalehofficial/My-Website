@@ -26,3 +26,13 @@ jobs:
 
       - name: Run lint checks
         run: npm run lint
+
+      - name: Sync Credly badges
+        run: npm run sync:credly
+
+      - name: Check Credly data is committed
+        run: |
+          if ! git diff --exit-code assets/data/credly-badges.json; then
+            echo "::error::credly-badges.json is out of date. Run npm run sync:credly and commit."
+            exit 1
+          fi
